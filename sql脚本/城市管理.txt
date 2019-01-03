@@ -1,0 +1,21 @@
+--城市管理sql
+--城市管理sql取消了,勿需提交脚本
+	--insert into TP_C_SQLINFO (SQL_NAME, SQL_INFO, DB_TYPE, REMARK)
+	--values ('cityQueryApart', 'select t.city_picture CITYPICTURE,t.admini_code ADMINICODE,
+	--	  t.admini_name ADMININAME,
+	--	  t.rank CITYRANK,
+	--	  f.staff_name RECORDUSER,
+	--	  to_char(t.record_time, ''yyyy/MM/dd'') RECORDTIME,
+	--	  t.status CITYSTATUS,
+	--	  ( CASE WHEN t.remark like ''%1%'' THEN ''1'' ELSE ''0'' END ) CITYREMARK,
+	--	  t.order_number ORDERNUMBER
+	--  from TB_P_CITY t ,TB_C_STAFF f
+	-- where t.record_user = f.staff_id(+)
+	-- and t.admini_code like ''%'' || :ADMINICODE || ''%''
+	--and t.admini_name like ''%'' || :ADMININAME || ''%''
+	-- and t.rank like ''%'' || :CITYRANK || ''%''
+	--  and nvl(t.order_number,'' '') like ''%'' || :ORDERNUMBER || ''%''
+	-- and t.status like ''%'' || :CITYSTATUS || ''%''
+	-- and nvl(t.remark,''0'') like ''%'' || :CITYREMARK || ''%''
+	--  and f.branch_id = ''$BRANCHID''
+	-- order by t.admini_code', 'dsOracle', '城市查询crm分店');
